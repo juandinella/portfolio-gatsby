@@ -14,8 +14,21 @@
   },
   "dependencies": {
     "gatsby": "^2.13.57",
+    "gatsby-image": "^2.2.8",
+    "gatsby-plugin-manifest": "^2.2.5",
+    "gatsby-plugin-react-helmet": "^3.1.3",
+    "gatsby-plugin-react-svg": "^2.1.2",
+    "gatsby-plugin-sass": "^2.1.6",
+    "gatsby-plugin-sharp": "^2.2.11",
+    "gatsby-plugin-styled-components": "^3.1.2",
+    "gatsby-source-filesystem": "^2.1.9",
+    "gatsby-transformer-json": "^2.2.2",
+    "gatsby-transformer-sharp": "^2.2.6",
+    "node-sass": "^4.12.0",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
