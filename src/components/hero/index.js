@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-import breakpoint from "../../../assets/styles/mixins"
+import breakpoint from "../../assets/styles/mixins"
 
-import TwitterIcon from "../../../assets/icons/twitter.inline.svg"
-import FacebookIcon from "../../../assets/icons/facebook.inline.svg"
-import InstagramIcon from "../../../assets/icons/instagram.inline.svg"
-import LinkedinIcon from "../../../assets/icons/linkedin.inline.svg"
-import GithubIcon from "../../../assets/icons/github.inline.svg"
-import ChevronDown from "../../../assets/icons/chevron-down.inline.svg"
+import TwitterIcon from "../../assets/icons/twitter.inline.svg"
+import FacebookIcon from "../../assets/icons/facebook.inline.svg"
+import InstagramIcon from "../../assets/icons/instagram.inline.svg"
+import LinkedinIcon from "../../assets/icons/linkedin.inline.svg"
+import GithubIcon from "../../assets/icons/github.inline.svg"
+import ChevronDown from "../../assets/icons/chevron-down.inline.svg"
 
 const StyledHero = styled.section`
   height: auto;

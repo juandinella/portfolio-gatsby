@@ -11,23 +11,23 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/src/assets/images/`
-      }
+        path: `${__dirname}/src/assets/images/`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "fonts",
-        path: `${__dirname}/src/assets/fonts/`
-      }
+        path: `${__dirname}/src/assets/fonts/`,
+      },
     },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /\.inline\.svg$/
-        }
-      }
+          include: /\.inline\.svg$/,
+        },
+      },
     },
     {
       resolve: "gatsby-plugin-manifest",
@@ -36,11 +36,11 @@ module.exports = {
         short_name: "JuanDiNella",
         start_url: "/",
         background_color: "#000",
-        theme_color: "#00",
+        theme_color: "#000",
         display: "standalone",
         icon: "static/favicon.ico",
-        crossOrigin: "use-credentials"
-      }
-    }
-  ]
+        crossOrigin: "use-credentials",
+      },
+    },
+  ],
 }
