@@ -87,10 +87,32 @@ const GlobalStyle = createGlobalStyle`
     a {
       display: inline-block;
       color: inherit;
+      font-family: "futura";
     }
 
     p {
       font-family: "futura";
+    }
+
+    .visuallyHidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    button {
+      background: none;
+      border: 0 none;
+      cursor: pointer;
+
+      &:focus {
+        outline: 0 none;
+      }
     }
   }
 `

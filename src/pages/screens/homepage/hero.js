@@ -7,6 +7,7 @@ import FacebookIcon from "../../../assets/icons/facebook.inline.svg"
 import InstagramIcon from "../../../assets/icons/instagram.inline.svg"
 import LinkedinIcon from "../../../assets/icons/linkedin.inline.svg"
 import GithubIcon from "../../../assets/icons/github.inline.svg"
+import ChevronDown from "../../../assets/icons/chevron-down.inline.svg"
 
 const StyledHero = styled.section`
   height: auto;
@@ -77,6 +78,28 @@ const Container = styled.div`
   `}
 `
 
+const ContactBTN = styled.a `
+  margin-top: 30px;
+  text-decoration: none;
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+  display: table;
+  padding: 12px 70px;
+  transition: all 0.225s ease;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+
+  &:hover {
+    color: black;
+    background-color: white;
+  }
+
+  ${breakpoint.small`
+    width: auto;
+  `}
+`
 const SocialList = styled.ul`
   li {
     display: inline-block;
@@ -128,6 +151,23 @@ const SocialList = styled.ul`
   }
 `
 
+const ScrollDown = styled.button`
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: none;
+  width: 36px;
+  padding: 0;
+  text-align: center;
+  z-index: 1;
+
+  ${breakpoint.medium`
+    display: block;
+  `}
+`
+
 export default () => (
   <StyledHero aria-label='Hero Banner'>
     <HeroContent className="hero--content">
@@ -144,7 +184,12 @@ export default () => (
           <li className='in'><a href='https://www.linkedin.com/in/juandinella/'><LinkedinIcon /></a></li>
           <li className='gh'><a href='https://github.com/juandinella'><GithubIcon /></a></li>
         </SocialList>
+        <ContactBTN href='mailto:juan.dinella@gmail.com'>Contact me</ContactBTN>
       </Container>
+      <ScrollDown>
+        <span className='visuallyHidden'>Scroll down to see my work</span>
+        <ChevronDown/>
+      </ScrollDown>
     </HeroContent>
   </StyledHero>
 )
