@@ -56,16 +56,29 @@ const WorkItem = styled.section`
       }
 
       &:last-of-type {
-        order: -1;
+        order: 2;
+
+        ${breakpoint.medium`
+            order: -1;
+        `}
 
         > div {
-          width: 80rem;
-          height: 59.375rem;
+          width: 100%;
+          height: 100%;
+
+          ${breakpoint.medium`
+            width: 1280px;
+            height: 950px;
+        `}
         }
 
         img {
-          position: absolute;
+          position: static;
           right: 0;
+
+          ${breakpoint.medium`
+            position: absolute;
+          `}
         }
       }
     }
@@ -75,7 +88,7 @@ const WorkItem = styled.section`
 const Heading = styled.h2`
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 10;
+  margin-bottom: 10px;
   line-height: 1;
 
   ${breakpoint.medium`
@@ -191,7 +204,7 @@ const Image = styled.div`
     max-width: 100%;
     filter: gray;
     -webkit-filter: grayscale(1);
-    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     vertical-align: text-bottom;
 
     ${breakpoint.medium`

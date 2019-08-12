@@ -10,12 +10,13 @@ const Grid = styled.div`
   .grid-item {
     width: 100%;
     margin-bottom: ${props => props.gutter}px;
+    width: calc((100% - ${props => props.gutter}px) / 1);
 
     &:last-child {
       margin-bottom: 0;
     }
 
-    ${breakpoint.small`
+    ${breakpoint.medium`
       width: calc((100% - ${props => props.gutter}px) / 2);
 
       &:nth-last-child(-n + 2) {
