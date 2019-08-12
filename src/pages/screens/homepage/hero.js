@@ -3,6 +3,10 @@ import styled from "styled-components"
 import breakpoint from "../../../assets/styles/mixins"
 
 import TwitterIcon from "../../../assets/icons/twitter.inline.svg"
+import FacebookIcon from "../../../assets/icons/facebook.inline.svg"
+import InstagramIcon from "../../../assets/icons/instagram.inline.svg"
+import LinkedinIcon from "../../../assets/icons/linkedin.inline.svg"
+import GithubIcon from "../../../assets/icons/github.inline.svg"
 
 const StyledHero = styled.section`
   height: auto;
@@ -73,6 +77,57 @@ const Container = styled.div`
   `}
 `
 
+const SocialList = styled.ul`
+  li {
+    display: inline-block;
+    margin-right: 25px;
+
+    svg {
+      transition: all .225s ease;
+    }
+  }
+  .tw {
+    &:hover {
+      a svg {
+        stroke: #00aced;
+      }
+    }
+  }
+
+  .fb {
+    &:hover {
+      a svg {
+        stroke: #3B5998;
+      }
+    }
+  }
+
+  .ig {
+    &:hover {
+      a svg {
+        stroke: #8a49a1;
+      }
+    }
+  }
+
+  .in {
+    &:hover {
+      a svg {
+        stroke: #4875B4;
+      }
+    }
+  }
+
+
+  .gh {
+    &:hover {
+      a svg path{
+        stroke: #333333;
+      }
+    }
+  }
+`
+
 export default () => (
   <StyledHero aria-label='Hero Banner'>
     <HeroContent className="hero--content">
@@ -82,7 +137,13 @@ export default () => (
         <Paragraph>Besides my passion for design and coding, I love and spend a lot of time travelling and taking photos. Feel free to visit my <a href="https://unsplash.com/@juandinella" title="Juan Di Nella's unsplash page" target="_blank" rel="noopener noreferrer"> Unsplash page</a>.</Paragraph>
         <Paragraph>My main focus nowadays is emotional design, web animation, and accessibility.</Paragraph>
         <Paragraph>And don’t forget to stalk me on:</Paragraph>
-        <TwitterIcon />
+        <SocialList>
+          <li className='tw'><a href='https://www.twitter.com/orugacontenta'><TwitterIcon /></a></li>
+          <li className='fb'><a href='https://www.facebook.com/tuvieja'><FacebookIcon /></a></li>
+          <li className='ig'><a href='https://www.instagram.com/juandinella/'><InstagramIcon /></a></li>
+          <li className='in'><a href='https://www.linkedin.com/in/juandinella/'><LinkedinIcon /></a></li>
+          <li className='gh'><a href='https://github.com/juandinella'><GithubIcon /></a></li>
+        </SocialList>
       </Container>
     </HeroContent>
   </StyledHero>
