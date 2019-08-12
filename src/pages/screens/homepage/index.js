@@ -1,11 +1,9 @@
 import React from "react"
-
+import Hero from "./hero"
 
 const Homepage = () => {
   return (
-    <div>
-      <h1>Hola gato</h1>
-    </div>
+    <Hero />
   )
 }
 

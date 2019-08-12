@@ -1,17 +1,9 @@
 const colors = {
   white: "#FFFFFF",
-  natural: "#F5F7F7",
-  black: "#222222",
-  purple: "#5F05AB",
-  darkPurple: "#38224B",
-  lightPurple: "#73637F",
-  cyan: "#00EAFF",
-  yellow: "#FCF113",
-  darkYellow: "#FFAF1B",
-  red: "#ED4569",
-  darkRed: "#E81F37",
-  green: "#79C142",
-  lightBlue: "#48C1E4"
+  black: "#000000",
+  red: "#ce4841",
+  yellow: "#f6aa3d",
+  lightBlue: "#74c0c0"
 }
 
 export default colors

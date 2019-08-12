@@ -35,8 +35,8 @@ module.exports = {
         name: "Juan Di Nella",
         short_name: "JuanDiNella",
         start_url: "/",
-        background_color: "#5F05AB",
-        theme_color: "#5F05AB",
+        background_color: "#000",
+        theme_color: "#00",
         display: "standalone",
         icon: "static/favicon.ico",
         crossOrigin: "use-credentials"

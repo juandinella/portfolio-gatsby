@@ -1,16 +1,48 @@
 import { createGlobalStyle } from 'styled-components'
 import breakpoint from "./mixins"
-import colors from "./colors"
+// import colors from "./colors"
+
+import FuturaMediumWOFF from "../fonts/futurabt-medium-webfont.woff"
+import FuturaMediumWOFF2 from "../fonts/futurabt-medium-webfont.woff2"
+import FuturaBoldWOFF2 from "../fonts/futuralt-bold-webfont.woff2"
 
 const GlobalStyle = createGlobalStyle`
-  body {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-    font-size: 21px;
-    font-weight: 500;
-    line-height: 1.5em;
-    overflow-x: hidden;
+
+  @font-face {
+      font-family: "futura";
+      src:
+        url("${ FuturaMediumWOFF2 }") format('Woff2'),
+        url("${ FuturaMediumWOFF }") format('Woff');
+      font-weight: 500;
+      font-display: swap;
+    }
+
+  @font-face {
+    font-family: "futura";
+    src:
+      url("${ FuturaBoldWOFF2}") format('Woff2');
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  *,
+  *::before {
+    box-sizing: border-box;
+  }
+
+  html {
+    position: relative;
+    font-family: "futura" -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
+  }
+
+
+  body {
+    font: inherit;
+    line-height: inherit;
+    margin: 0;
+    position: relative;
 
     h1,
     h2,
@@ -18,7 +50,8 @@ const GlobalStyle = createGlobalStyle`
     h4,
     h5,
     h6 {
-      font-weight: 900;
+      font-weight: 700;
+      font-family: "futura";
       line-height: 1em;
     }
 
@@ -54,34 +87,10 @@ const GlobalStyle = createGlobalStyle`
     a {
       display: inline-block;
       color: inherit;
-      text-decoration: none;
+    }
 
-      &.rollout {
-        position: relative;
-        transition: all .3s;
-
-        &::before {
-          content: '';
-          position: absolute;
-          height: 2px;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background-color: ${ colors.cyan};
-          transform-origin: bottom left;
-          transform: scaleX(1);
-          transition: transform 0.3s ease-in-out;
-        }
-
-        &:hover {
-          color: ${ colors.cyan};
-
-          &::before {
-            transform: scaleX(0);
-            transform-origin: bottom left;
-          }
-        }
-      }
+    p {
+      font-family: "futura";
     }
   }
 `
