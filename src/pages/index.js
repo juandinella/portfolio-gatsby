@@ -4,7 +4,7 @@ import Hero from "../components/hero/"
 import Work from "../components/work/"
 import FrontendWorkText from "../components/frontendWork-text"
 import FrontendItem from "../components/frontendItem"
-import Grid from "../components/grid"
+import FrontendGrid from "../components/frontendGrid"
 
 import SatellogicImage from "../assets/images/satellogic.jpg"
 import LopezImage from "../assets/images/lopez.jpg"
@@ -55,8 +55,9 @@ const App = () => (
       image={NeoloImage}
     />
     <FrontendWorkText />
-    <Grid columns="4">
+    <FrontendGrid>
       <FrontendItem
+        className="grid-item"
         url='google.com'
         image={p2hImage}
         title='Hola'
@@ -68,6 +69,7 @@ const App = () => (
         ]}
       />
       <FrontendItem
+        className="grid-item"
         url='google.com'
         image={p2hImage}
         title='Hola'
@@ -79,6 +81,7 @@ const App = () => (
         ]}
       />
       <FrontendItem
+        className="grid-item"
         url='google.com'
         image={p2hImage}
         title='Hola'
@@ -90,6 +93,7 @@ const App = () => (
         ]}
       />
       <FrontendItem
+        className="grid-item"
         url='google.com'
         image={p2hImage}
         title='Hola'
@@ -100,7 +104,55 @@ const App = () => (
           '#Animation'
         ]}
       />
-    </Grid>
+      <FrontendItem
+        className="grid-item"
+        url='google.com'
+        image={p2hImage}
+        title='Hola'
+        hashtags={[
+          '#HTML',
+          '#CSS',
+          '#JS',
+          '#Animation'
+        ]}
+      />
+      <FrontendItem
+        className="grid-item"
+        url='google.com'
+        image={p2hImage}
+        title='Hola'
+        hashtags={[
+          '#HTML',
+          '#CSS',
+          '#JS',
+          '#Animation'
+        ]}
+      />
+      <FrontendItem
+        className="grid-item"
+        url='google.com'
+        image={p2hImage}
+        title='Hola'
+        hashtags={[
+          '#HTML',
+          '#CSS',
+          '#JS',
+          '#Animation'
+        ]}
+      />
+      <FrontendItem
+        className="grid-item"
+        url='google.com'
+        image={p2hImage}
+        title='Hola'
+        hashtags={[
+          '#HTML',
+          '#CSS',
+          '#JS',
+          '#Animation'
+        ]}
+      />
+    </FrontendGrid>
   </Layout>
 )
 

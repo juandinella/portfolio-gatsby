@@ -123,18 +123,16 @@ const FrontendItem = styled.div `
 `
 
 export default ({ url, image, title, hashtags }) => (
-  <div className="grid-item">
-    <FrontendItem>
-      <a href={url}>
-        <figure>
-          <img src={image}></img>
-          <figcaption>
-            <h3>{title}</h3>
-            <ul>{hashtags.map((item) => <li>{item}</li>)}</ul>
-            <span>View site</span>
-          </figcaption>
-        </figure>
-      </a>
-    </FrontendItem>
-  </div>
+  <FrontendItem>
+    <a href={url}>
+      <figure>
+        <img src={image}></img>
+        <figcaption>
+          <h3>{title}</h3>
+          <ul>{hashtags.map((item) => <li>{item}</li>)}</ul>
+          <span>View site</span>
+        </figcaption>
+      </figure>
+    </a>
+  </FrontendItem>
 )
