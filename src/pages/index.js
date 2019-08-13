@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Layout from "../layouts/"
 import Hero from "../components/hero/"
-import Work from "../components/work/"
+import { WorkEven, WorkOdd } from "../components/work/"
 import FrontendWorkText from "../components/frontendWork-text"
 import FrontendItem from "../components/frontendItem"
 import FrontendGrid from "../components/frontendGrid"
@@ -27,10 +27,15 @@ const App = () => (
       <meta charSet="utf-8" />
       <title>Juan Di Nella - Web designer and frontend developer</title>
       <meta name="description" content="I’m a 29-year-old Argentinian-Italian UI Developer living in Buenos Aires. I’m a really curious person, and in spite of having a university degree, I consider myself a self-taught person constantly learning and always looking for new things to improve."></meta>
-      <link rel="canonical" href="http://juandinella.com" />
+      <meta property="og:title" content="Juan Di Nella web designer and frontend developer"></meta>
+      <meta property="og:description" content="I’m a 29-year-old Argentinian-Italian UI Developer living in Buenos Aires. I’m a really curious person, and in spite of having a university degree, I consider myself a self-taught person constantly learning and always looking for new things to improve."></meta>
+      <meta property="og:type" content="website"></meta>
+      <meta property="og:url" content="https://www.juandinella.com"></meta>
+      <meta property="og:site_name" content="Juan Di Nella"></meta>
+      <meta property="og:image" content="https://www.juandinella.com/assets/images/web.jpg"></meta>
     </Helmet>
     <Hero />
-    <Work
+    <WorkOdd
       title="Satellogic"
       about="Satellogic is the first vertically integrated geospatial analytics company. They drive real results with information on a planetary scale that you can trust."
       descriptions={[
@@ -40,7 +45,7 @@ const App = () => (
       alt="Satellogic's website screenshot"
       image={SatellogicImage}
     />
-    <Work
+    <WorkEven
       title="Lopez Hostel & Suites"
       about="Lopez Hostel & Suites is a boutique hostel in Palermo, Buenos Aires."
       descriptions={[
@@ -50,7 +55,7 @@ const App = () => (
       alt="Lopez Hostel and Suites's website screenshot"
       image={LopezImage}
     />
-    <Work
+    <WorkOdd
       title="Soy Solo"
       about="Soy solo is a book of honest stories about leadership to be happy in the 21st century and beyond by Leo Piccioli."
       descriptions={[
@@ -60,7 +65,7 @@ const App = () => (
       alt="Soy Solo website screenshot"
       image={SoysoloImage}
     />
-    <Work
+    <WorkEven
       title="Neolo"
       about="Neolo is one of the most important web hosting company in Latin America with more than 80,000 websites and 14 years of experience"
       descriptions={[

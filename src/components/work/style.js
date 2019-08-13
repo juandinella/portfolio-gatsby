@@ -1,86 +1,6 @@
 import styled from "styled-components"
 import breakpoint from "../../assets/styles/mixins"
 
-export const WorkItem = styled.section`
-  padding: 60px 0;
-  margin: 20px 0;
-  min-height: auto;
-  overflow: hidden;
-  position: relative;
-
-  ${breakpoint.medium`
-    min-height: 1200px;
-    padding: 130px 0;
-  `}
-
-  &:nth-child(even) {
-    .grid-item {
-      display: flex;
-      position: static;
-      padding: 0;
-      right: 0;
-    }
-  }
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 240px;
-    height: 2px;
-    background-color: black;
-
-    ${breakpoint.medium`
-      width: 360px;
-    `}
-  }
-  &:nth-child(odd) {
-    .grid-item {
-      display: flex;
-      position: static;
-      padding: 0;
-      left: 0;
-
-      &:first-of-type {
-        > div {
-          float: right;
-          margin-left: auto;
-        }
-      }
-
-      &:last-of-type {
-        order: 2;
-
-        ${breakpoint.medium`
-            order: -1;
-        `}
-
-        > div {
-          width: 100%;
-          height: 100%;
-
-          ${breakpoint.medium`
-            width: 1280px;
-            height: 950px;
-        `}
-        }
-
-        img {
-          position: static;
-          right: 0;
-
-          ${breakpoint.medium`
-            position: absolute;
-          `}
-        }
-      }
-    }
-  }
-`;
-
 export const Heading = styled.h2`
   font-size: 48px;
   font-weight: 700;
@@ -185,7 +105,7 @@ export const WorkText = styled.div`
 `;
 
 export const Image = styled.div`
-  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 1);
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
 
@@ -207,5 +127,96 @@ export const Image = styled.div`
       max-width: 1280px;
       width: 1280px;
     `}
+  }
+`;
+
+export const WorkItem = styled.section`
+  padding: 60px 0;
+  margin: 20px 0;
+  min-height: auto;
+  overflow: hidden;
+  position: relative;
+
+  ${breakpoint.medium`
+    min-height: 1200px;
+    padding: 130px 0;
+  `}
+
+  &:nth-child(even) {
+    .grid-item {
+      display: flex;
+      position: static;
+      padding: 0;
+      right: 0;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 240px;
+    height: 2px;
+    background-color: black;
+
+    ${breakpoint.medium`
+      width: 360px;
+    `}
+  }
+
+  &.workEven {
+    .grid-item {
+      &:first-of-type {
+        left: 0;
+        position: static;
+        padding: 0;
+        display: flex;
+
+        ${breakpoint.medium`
+          position: absolute;
+      `}
+      }
+
+      &:last-of-type {
+        margin-left: auto;
+        order: -1;
+
+        ${breakpoint.medium`
+          order: 1;
+      `}
+      }
+    }
+
+    ${ WorkText} {
+      float: none;
+
+      ${breakpoint.medium`
+        float: right;
+      `}
+    }
+
+    ${ Image } {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      ${breakpoint.medium`
+        max-width: 1280px;
+        width: 1280px;
+        height: 950px;
+      `}
+
+      img {
+        position: static;
+        right: 0;
+
+        ${breakpoint.medium`
+          position: absolute;
+        `}
+      }
+    }
   }
 `;

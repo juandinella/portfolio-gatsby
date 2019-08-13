@@ -26,7 +26,7 @@ export default () => (
         </SocialList>
         <ContactBTN href='mailto:juan.dinella@gmail.com' title='Drop me a line'>Contact me</ContactBTN>
       </Container>
-      <ScrollDown>
+      <ScrollDown id='scroll'>
         <span className='visuallyHidden'>Scroll down to see my work</span>
         <ChevronDown/>
       </ScrollDown>
