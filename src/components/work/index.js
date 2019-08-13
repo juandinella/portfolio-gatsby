@@ -188,6 +188,7 @@ const WorkText = styled.div`
   }
 `
 
+
 const Image = styled.div`
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
   position: relative;
@@ -214,7 +215,7 @@ const Image = styled.div`
   }
 `
 
-export default ({ title, about, description, url, image }) => (
+export default ({ title, about, descriptions, url, image, paragraphs, paragraph }) => (
   <WorkItem>
     <Container>
       <Grid columns="2" gutter="1">
@@ -222,7 +223,8 @@ export default ({ title, about, description, url, image }) => (
           <WorkText>
             <Heading>{title}</Heading>
             <About>{about}</About>
-            <Description>{description}</Description>
+            {descriptions && descriptions.map((p, i) => (<Description key={i}>{p}</Description>))}
+
             <a href={url}>
               <span>Visit the website</span>
               <ArrowRight />
