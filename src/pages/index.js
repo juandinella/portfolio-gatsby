@@ -20,6 +20,7 @@ import borrowImage from "../assets/images/borrow.jpg"
 const App = () => (
   <Layout>
     <Helmet>
+      <html lang="en" dir="ltr" />
       <meta charSet="utf-8" />
       <title>Juan Di Nella - Web designer and frontend developer</title>
       <meta name="description" content="I’m a 29-year-old Argentinian-Italian UI Developer living in Buenos Aires. I’m a really curious person, and in spite of having a university degree, I consider myself a self-taught person constantly learning and always looking for new things to improve."></meta>

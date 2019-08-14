@@ -1,29 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 import breakpoint from "./mixins"
-// import colors from "./colors"
 
-import FuturaMediumWOFF from "../fonts/futurabt-medium-webfont.woff"
-import FuturaMediumWOFF2 from "../fonts/futurabt-medium-webfont.woff2"
-import FuturaBoldWOFF2 from "../fonts/futuralt-bold-webfont.woff2"
 
 const GlobalStyle = createGlobalStyle`
-
-  @font-face {
-      font-family: "futura";
-      src:
-        url("${ FuturaMediumWOFF2 }") format('Woff2'),
-        url("${ FuturaMediumWOFF }") format('Woff');
-      font-weight: 500;
-      font-display: swap;
-    }
-
-  @font-face {
-    font-family: "futura";
-    src:
-      url("${ FuturaBoldWOFF2}") format('Woff2');
-    font-weight: 700;
-    font-display: swap;
-  }
 
   *,
   *::before {
@@ -32,9 +11,13 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     position: relative;
-    font-family: "futura" -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
+
+    &.wf-active {
+      font-family: "futura"
+    }
   }
 
 
@@ -43,6 +26,35 @@ const GlobalStyle = createGlobalStyle`
     line-height: inherit;
     margin: 0;
     position: relative;
+
+    &.magic {
+
+      h1 {
+        color: #ce4841;
+      }
+
+      h2 {
+        color: #74c0c0;
+      }
+
+      .work--img,
+      .pixel-block {
+        img {
+          filter: none;
+          -webkit-filter: grayscale(0);
+        }
+      }
+
+      .hero {
+        ul {
+          .tw a svg {stroke: #00aced;}
+          .fb a svg {stroke: #3B5998;}
+          .ig a svg {stroke: #8a49a1;}
+          .in a svg {stroke: #4875B4;}
+          .gh a svg {stroke: #333333;}
+        }
+      }
+    }
 
     h1,
     h2,

@@ -10,7 +10,7 @@ export default ({ title, about, descriptions, url, image, alt }) => (
       <Grid columns="2" gutter="1">
         <div className="grid-item">
           <Image>
-            <img src={image} alt={alt} />
+            <img src={image} loading='lazy' alt={alt} />
           </Image>
         </div>
         <div className="grid-item">

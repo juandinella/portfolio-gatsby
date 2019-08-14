@@ -30,6 +30,15 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ['futura'],
+          urls: ['fonts.css']
+        }
+      }
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "Juan Di Nella",
