@@ -1,5 +1,6 @@
 import React from "react"
-import { StyledHero, Heading, HeroContent, Paragraph, Container, ContactBTN, SocialList, ScrollDown} from './style';
+import { Link } from "react-scroll";
+import { StyledHero, Heading, HeroContent, Paragraph, Container, ContactBTN, SocialList} from './style';
 
 import TwitterIcon from "../../assets/icons/twitter.inline.svg"
 import FacebookIcon from "../../assets/icons/facebook.inline.svg"
@@ -9,7 +10,7 @@ import GithubIcon from "../../assets/icons/github.inline.svg"
 import ChevronDown from "../../assets/icons/chevron-down.inline.svg"
 
 export default () => (
-  <StyledHero aria-label='Hero Banner'>
+  <StyledHero aria-label='Hero Banner' id='hero'>
     <HeroContent className="hero--content">
       <Container>
         <Heading>Hi, I’m Juan</Heading>
@@ -26,10 +27,10 @@ export default () => (
         </SocialList>
         <ContactBTN href='mailto:juan.dinella@gmail.com' title='Drop me a line'>Contact me</ContactBTN>
       </Container>
-      <ScrollDown id='scroll'>
+      <Link className='scrollTo' to="works" smooth={true}>
         <span className='visuallyHidden'>Scroll down to see my work</span>
         <ChevronDown/>
-      </ScrollDown>
+      </Link>
     </HeroContent>
   </StyledHero>
 )

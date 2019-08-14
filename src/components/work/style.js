@@ -192,6 +192,7 @@ export const WorkItem = styled.section`
 
     ${ WorkText} {
       float: none;
+      margin-left: auto;
 
       ${breakpoint.medium`
         float: right;

@@ -12,6 +12,24 @@ export const StyledHero = styled.section`
     height: 100vh;
     padding: 0;
   `}
+
+  .scrollTo {
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: none;
+    width: 36px;
+    padding: 0;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+
+    ${breakpoint.medium`
+      display: block;
+    `}
+  }
 `;
 
 export const Heading = styled.h1`
@@ -144,19 +162,3 @@ export const SocialList = styled.ul`
   }
 `;
 
-export const ScrollDown = styled.button`
-  position: absolute;
-  bottom: 1%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  display: none;
-  width: 36px;
-  padding: 0;
-  text-align: center;
-  z-index: 1;
-
-  ${breakpoint.medium`
-    display: block;
-  `}
-`;
