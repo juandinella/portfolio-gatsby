@@ -1,7 +1,6 @@
 import React from "react"
-import { Link } from "react-scroll";
 import { CanvasStyled } from './style';
 
 export default () => (
-  <CanvasStyled id='canvas/>
+  <CanvasStyled id='canvas'>Soy un canvas bien piola</CanvasStyled>
 )

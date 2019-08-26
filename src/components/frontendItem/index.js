@@ -126,7 +126,7 @@ export default ({ url, image, title, hashtags }) => (
   <FrontendItem>
     <a href={url}>
       <figure>
-        <img src={image} loading='lazy' alt={title + "'s screenshot"}></img>
+        <img src={image} loading='lazy' alt={title + "'s screenshot"} max-width="720" max-height="1028"></img>
         <figcaption>
           <h3>{title}</h3>
           <ul>{hashtags.map((item) => <li>{item}</li>)}</ul>

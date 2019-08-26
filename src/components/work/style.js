@@ -122,6 +122,7 @@ export const Image = styled.div`
     -webkit-filter: grayscale(1);
     transition: all 0.2s ease-in-out;
     vertical-align: text-bottom;
+    height: auto;
 
     ${breakpoint.medium`
       max-width: 1280px;

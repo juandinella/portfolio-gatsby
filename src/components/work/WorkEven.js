@@ -4,13 +4,13 @@ import Container from "../container"
 import Grid from "../grid"
 import ArrowRight from "../../assets/icons/arrow-right.inline.svg"
 
-export default ({ title, about, descriptions, url, image, alt }) => (
+export default ({ title, about, descriptions, url, image }) => (
   <WorkItem className='workEven' aria-label={title + "work"}>
     <Container>
       <Grid columns="2" gutter="1">
         <div className="grid-item">
           <Image>
-            <img src={image} loading='lazy' alt={alt} />
+            <img src={image} loading='lazy' alt={title + "'s website screenshot"} width="1280" height="950"></img>
           </Image>
         </div>
         <div className="grid-item">

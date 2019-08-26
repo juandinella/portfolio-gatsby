@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import Layout from "../layouts/"
+import Canvas from "../components/canvas/"
 import Hero from "../components/hero/"
 import AllWorks from "../components/work/allWorks"
 import FrontendWorkText from "../components/frontendWork-text"
@@ -31,8 +32,9 @@ const App = () => (
       <meta property="og:site_name" content="Juan Di Nella"></meta>
       <meta property="og:image" content="https://www.juandinella.com/assets/images/web.jpg"></meta>
     </Helmet>
+    <Canvas />
     <Hero />
-    <AllWorks/ >
+    <AllWorks />
     <FrontendWorkText />
     <FrontendGrid>
       <FrontendItem

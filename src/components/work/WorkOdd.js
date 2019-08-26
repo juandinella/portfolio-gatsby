@@ -21,7 +21,7 @@ export default ({ title, about, descriptions, url, image, alt }) => (
         </div>
         <div className="grid-item">
           <Image>
-            <img src={image} loading='lazy' alt={alt} />
+            <img src={image} loading='lazy' alt={title + "'s website screenshot"} width="1280" height="950"></img>
           </Image>
         </div>
       </Grid>

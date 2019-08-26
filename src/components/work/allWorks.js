@@ -20,7 +20,6 @@ export default () => (
         'In collaboration with the Sans Bureau team we were working on the redesign of the Satellogic website.'
       ]}
       url="https://satellogic.com/"
-      alt="Satellogic's website screenshot"
       image={SatellogicImage}
     />
     <WorkEven
@@ -30,7 +29,6 @@ export default () => (
         'I had the pleasure to work with this great hostel making a redesign and the frontend of their new website.'
       ]}
       url="https://www.lopezhostel.com/en/index"
-      alt="Lopez Hostel and Suites's website screenshot"
       image={LopezImage}
     />
     <WorkOdd
@@ -40,7 +38,6 @@ export default () => (
         'Leo requested me to create a landing page for his brand new book, Soy solo. He wanted a simple, clean, fast website and I designed and developed one for him.'
       ]}
       url="https://soy-solo.netlify.com/"
-      alt="Soy Solo website screenshot"
       image={SoysoloImage}
     />
     <WorkEven
@@ -51,7 +48,6 @@ export default () => (
         'For this job I tried to focus mainly on emotional design and create reusable blocks that could work for the different pages.'
       ]}
       url="https://www.neolo.com/argentina/"
-      alt="Neolo's website screenshot"
       image={NeoloImage}
     />
   </AllWorks>

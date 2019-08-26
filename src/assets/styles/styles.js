@@ -16,7 +16,19 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
 
     &.wf-active {
-      font-family: "futura"
+      font-family: "futura";
+
+      h1 {
+        font-weight: 700;
+        letter-spacing: 0;
+        font-family: "futura"
+      }
+
+      p {
+        line-height: 1.5;
+        font-weight: 500;
+        font-family: "futura";
+      }
     }
   }
 
@@ -63,13 +75,13 @@ const GlobalStyle = createGlobalStyle`
     h5,
     h6 {
       font-weight: 700;
-      font-family: "futura";
       line-height: 1em;
     }
 
     h1 {
       font-size: 48px;
-      font-weight: 900;
+      font-weight: 800;
+      letter-spacing: 4px;
 
       ${breakpoint.small`
         font-size: 71px;
@@ -99,11 +111,11 @@ const GlobalStyle = createGlobalStyle`
     a {
       display: inline-block;
       color: inherit;
-      font-family: "futura";
     }
 
     p {
-      font-family: "futura";
+      line-height: 1.6;
+      font-weight: 600;
     }
 
     .visuallyHidden {

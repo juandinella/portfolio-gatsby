@@ -3,6 +3,7 @@ module.exports = {
     title: "Juan Di Nella's Portfolio",
   },
   plugins: [
+    "gatsby-plugin-preload-link-crossorigin",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-plugin-styled-components",
