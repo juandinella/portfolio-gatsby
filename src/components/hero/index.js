@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-scroll";
-import { StyledHero, Heading, HeroContent, Paragraph, Container, ContactBTN, SocialList, Canvas } from './style';
+import { StyledHero, Heading, HeroContent, Paragraph, Container, ContactBTN, SocialList } from './style';
 
 import TwitterIcon from "../../assets/icons/twitter.inline.svg"
 import FacebookIcon from "../../assets/icons/facebook.inline.svg"
@@ -13,7 +13,6 @@ export default () => (
   <StyledHero aria-label='Hero Banner' id='hero'>
     <HeroContent className="hero--content">
       <Container>
-        <Canvas id='canvas'>SOY UN CANVAS</Canvas>
         <Heading>Hi, I’m Juan</Heading>
         <Paragraph>I’m a 29-year-old Argentinian-Italian UI Developer living in Buenos Aires. I’m a really curious person, and in spite of having a university degree, I consider myself a self-taught person constantly learning and always looking for new things to improve.</Paragraph>
         <Paragraph>Besides my passion for design and coding, I love and spend a lot of time travelling and taking photos. Feel free to visit my <a href="https://unsplash.com/@juandinella" title="Juan Di Nella's unsplash page" target="_blank" rel="noopener noreferrer"> Unsplash page</a>.</Paragraph>
